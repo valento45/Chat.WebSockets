@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <h2>WebSocket Chat</h2>
+
+
+
+    <div id="pnlName" class="d-flex ">
+        <input id="txtNomeCliente" type="text" placeholder="Digite seu nome" />
+        <button onclick="acessarChat()" class="btn btn-dark">Entrar no chat</button>
+    </div>
+
+
+    <div id="pnlChat" class="d-none">
+        <div id="chatbox"></div>
+        <input type="text" id="message" placeholder="Enter your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+
+</div>
